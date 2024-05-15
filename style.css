@@ -51,3 +51,37 @@
     top: 50px;
     width: 80%;
 }
+
+.sessao2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #007fc7;
+    height: 400px;
+}
+.input-perfil {
+    height: 50px;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.bg-perfil {
+    background-color: white;
+    height: 40vh;
+    border-radius: 20px;
+    width: 50%;
+}
+.t-perfil {
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+.bg-inp-per {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
