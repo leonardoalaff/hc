@@ -8,7 +8,6 @@
 }
 
 .sessao1 {
-    background-image: linear-gradient(to bottom, #ff69b4, #7611b1);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -16,17 +15,19 @@
     align-items: center;
 }
 .conversor-pol {
+    cursor: pointer;
     position: relative;
-    border: 2px solid white;
     width: 46%;
     height: 50vh;
     border-radius: 20px;
     margin: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.322);
 }
 
 .t-conversor {
     text-align: center;
-    color: white;
+    color: black;
     position: relative;
     top: 3vh;
     font-weight: lighter;
@@ -63,26 +64,41 @@
 
 .bg-perfil {
     position: relative;
-    border: 2px solid white;
+    cursor: pointer;
     width: 46%;
     height: 50vh;
     border-radius: 20px;
     margin: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.322);
 }
 .bg-perfil::before, .conversor-pol::before {
     content: "";
-    width: 46%;
-    height: 50vh;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     position: absolute;
-    margin: 20px;
     left: -170px;
     top: 100%;
-    background-color: red;
+}
+.bg-perfil::before {
+    background-color: #ff5500;
+}
+.conversor-pol::before {
+    background-color: #00aaff;
 }
 
 .bg-perfil:hover::before, .conversor-pol:hover::before {
     animation: desloca .5s;
+    left: 0;
+    top: 0;
+}
+
+.bg-perfil:hover .t-perfil {
+    color: white;
+}
+.conversor-pol:hover .t-conversor {
+    color: white;
 }
 
 @keyframes desloca {
@@ -104,7 +120,7 @@
     text-align: center;
     position: relative;
     top: 20px;
-    color: white;
+    color: black;
     font-weight: lighter;
 }
 .bg-inp-per {
@@ -118,6 +134,7 @@
     top: 80px;
     text-align: center;
     font-size: 1.5em;
+    color: white;
 }
 
 .bg-ferramentas {
