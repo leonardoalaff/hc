@@ -52,6 +52,7 @@
     position: relative;
     top: 50px;
     width: 80%;
+    background-color: #616161;
 }
 .input-perfil {
     border: 0;
@@ -60,6 +61,10 @@
     position: relative;
     top: 50px;
     width: 80%;
+    background-color: #616161;
+}
+::placeholder {
+    color: white;
 }
 
 .bg-perfil {
@@ -99,6 +104,15 @@
 }
 .conversor-pol:hover .t-conversor {
     color: white;
+}
+.bg-perfil:hover .input-perfil {
+    background-color: white;
+}
+.conversor-pol:hover #polegadas {
+    background-color: white;
+}
+.bg-perfil:hover ::placeholder {
+    color: black;
 }
 
 @keyframes desloca {
