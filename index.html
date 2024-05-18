@@ -7,22 +7,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="bg-conv">
-      <div class="conversor-pol">
-          <h2 class="t-conversor">Conversor de Polegadas para Milímetros</h2>
-          <div class="bg-input"><input type="text" id="polegadas" placeholder="     Polegadas.." oninput="converterPolegadasParaMilimetros()"></div>
-          <p id="resultado"></p>
-      </div>
-    </section>
+  <section class="sessao1">
+      <div class="bg-ferramentas">
 
-    <section class="sessao2">
-      <div class="bg-perfil">
-        <h1 class="t-perfil">Tabela perfis</h1>
-        <form class="bg-inp-per">
-          <input class="input-perfil" type="text" placeholder="   Valor perfil">
-          <button class="btn-enviar">enviar</button>
-        </form>
-        <p class="resultado-perfil"></p>
+        <div class="bg-perfil">
+          <h1 class="t-perfil">Tabela de área perfis</h1>
+          <form class="bg-inp-per">
+            <input class="input-perfil" type="text" placeholder="   Valor perfil...">
+          </form>
+          <p class="resultado-perfil"></p>
+        </div>
+
+
+
+        <div class="conversor-pol">
+            <h2 class="t-conversor">Conversor Polegadas / Milímetros</h2>
+            <div class="bg-input"><input type="text" id="polegadas" placeholder="     Polegadas.." oninput="converterPolegadasParaMilimetros()"></div>
+            <p id="resultado"></p>
+        </div>
       </div>
     </section>
 

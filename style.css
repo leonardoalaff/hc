@@ -7,16 +7,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.bg-conv {
+.sessao1 {
+    background-image: linear-gradient(to bottom, #ff69b4, #7611b1);
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none; /************************************/
 }
 .conversor-pol {
-    background-color: #007fc7;
+    border: 2px solid white;
     width: 46%;
     height: 50vh;
     border-radius: 20px;
@@ -26,7 +26,6 @@
 .t-conversor {
     text-align: center;
     color: white;
-    font-size: 1em;
     position: relative;
     top: 3vh;
     font-weight: lighter;
@@ -52,37 +51,50 @@
     top: 50px;
     width: 80%;
 }
-
-.sessao2 {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: #007fc7;
-    height: 400px;
-}
 .input-perfil {
-    height: 50px;
-    position: relative;
+    border: 0;
+    height: 5vh;
     border-radius: 10px;
-    border: 1px solid gray;
+    position: relative;
+    top: 50px;
+    width: 80%;
 }
 
 .bg-perfil {
-    background-color: white;
-    height: 40vh;
+    border: 2px solid white;
+    width: 46%;
+    height: 50vh;
     border-radius: 20px;
-    width: 50%;
+    margin: 20px;
 }
+.bg-perfil::before {
+    width: 46%;
+    height: 50vh;
+    border-radius: 20px;
+    background-color: red;
+}
+
 .t-perfil {
     text-align: center;
     position: relative;
     top: 20px;
+    color: white;
+    font-weight: lighter;
 }
 .bg-inp-per {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.resultado-perfil {
     position: relative;
-    top: 50px;
+    top: 80px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.bg-ferramentas {
+    display: flex;
+    width: 100%;
 }
