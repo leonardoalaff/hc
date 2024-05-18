@@ -114,6 +114,9 @@
 .bg-perfil:hover ::placeholder {
     color: black;
 }
+.conversor-pol:hover ::placeholder {
+    color: black;
+}
 
 @keyframes desloca {
     0% {
