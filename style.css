@@ -16,6 +16,7 @@
     align-items: center;
 }
 .conversor-pol {
+    position: relative;
     border: 2px solid white;
     width: 46%;
     height: 50vh;
@@ -61,17 +62,42 @@
 }
 
 .bg-perfil {
+    position: relative;
     border: 2px solid white;
     width: 46%;
     height: 50vh;
     border-radius: 20px;
     margin: 20px;
 }
-.bg-perfil::before {
+.bg-perfil::before, .conversor-pol::before {
+    content: "";
     width: 46%;
     height: 50vh;
     border-radius: 20px;
+    position: absolute;
+    margin: 20px;
+    left: -170px;
+    top: 100%;
     background-color: red;
+}
+
+.bg-perfil:hover::before, .conversor-pol:hover::before {
+    animation: desloca .5s;
+}
+
+@keyframes desloca {
+    0% {
+        left: -170px;
+        top: 100%;
+    }
+    50% {
+        left: 15%;
+        top: -25%;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
 }
 
 .t-perfil {
