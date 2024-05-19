@@ -31,6 +31,12 @@ body {
     font-size: 2em;
     margin: 10px 0;
     color: #616161;
+    cursor: context-menu;
+    transition: 0.5s;
+}
+.clock-element:hover {
+    transition: 0.5s;
+    color: white;
 }
 
 #dayOfWeek {
@@ -267,6 +273,11 @@ body {
     max-width: 100%;
     height: auto;
     display: block;
+    transition: 0.5s;
+}
+.ilustracao-furo:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
 }
 .linha {
     position: relative;
