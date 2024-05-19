@@ -163,10 +163,10 @@ body {
     top: 100%;
 }
 .bg-perfil::before {
-    background-color: #ff5500;
+    background-color: green;
 }
 .conversor-pol::before {
-    background-color: #007fc7;
+    background-color: #005fc7;
 }
 
 .bg-perfil:hover::before, .conversor-pol:hover::before {
@@ -302,7 +302,7 @@ body {
 
 /********* SESSÃO 3 ************/
 .sessao3 {
-    background: #121212 url('imagens/background.svg');
+    background: #121212 url('imagens/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -313,7 +313,6 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    top: 8vh;
     width: 100%;
 }
 .t-s3 {
@@ -332,19 +331,38 @@ body {
     align-items: end;
 }
 .p-s3 {
-    background-color: rgba(0, 0, 0, 0.233);
     color: #b3b3b3;
-    width: 80%;
     padding: 30px;
     position: relative;
     bottom: 5vh;
-    transition: .5s;
-}
-.p-s3:hover {
-    background-color: black;
-    transition: .5s;
+    left: 10vh;
+    width: 60%;
 }
 
 .ab {
     text-decoration: none;
+}
+
+.sessao4 {
+    display: flex;
+}
+.voltagem {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 30vh;
+    color: #e0e0e0;
+    position: relative;
+    top: 20vh;
+    right: 20%;
+    transition: .5s;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
+}
+.voltagem:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
+    transition: .5s;
 }
