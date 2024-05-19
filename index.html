@@ -7,7 +7,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <div class="clock-container">
+    <div id="dayOfWeek" class="clock-element"></div>
+    <div id="date" class="clock-element"></div>
+    <div id="time" class="clock-element"></div>
+</div>
+
   <section class="sessao1">
+
+
+    
       <div class="bg-ferramentas">
 
         <div class="bg-perfil">
@@ -16,6 +26,7 @@
             <input class="input-perfil" type="text" autocomplete="off" placeholder="   Valor perfil...">
           </form>
           <p class="resultado-perfil"></p>
+          <div class="bg-btn-limpar"><button class="btn-limpar btn-limpar1">Limpar</button></div>
         </div>
 
 
@@ -24,21 +35,28 @@
             <h2 class="t-conversor">Conversor Polegadas / Milímetros</h2>
             <div class="bg-input"><input type="text" autocomplete="off" id="polegadas" placeholder="     Polegadas.." oninput="converterPolegadasParaMilimetros()"></div>
             <p id="resultado"></p>
+            <div class="bg-btn-limpar"><button class="btn-limpar btn-limpar2">Limpar</button></div>
         </div>
       </div>
     </section>
 
     <section class="sessao2">
-      <h1 class="t-s2">Como saber se o furo poderá ser mantido no plano de corte.</h1>
+      <h1 class="t-s2">Como saber se o furo poderá ser mantido no plano de corte</h1>
 
       <div class="bg-ilustracao-e-texto-furo">
         <img class="ilustracao-furo" src="imagens/ilustracao-furo.svg" alt="">
 
 
-        <div class="linha"></div>
+        <div class="bg-linha">
+          <div class="linha"></div>
+        </div>
 
         <p class="p-furo">Para saber se o furo poderá ser mantido no plano de corte, basta multiplicar a espessura da chapa por 2,5. Caso o resultado seja menor que o diâmetro do furo, o mesmo poderá ser mantido. <br><br><br> No exemplo ao lado, temos um furo com 18mm de diâmetro e uma chapa de 6,35mm de espessura. Então, quando fazemos 6,35 x 2,5, temos 15,8 como resultado.<br><br><br> Isso significa que o furo poderá ser mantido no plano de corte.</p>
       </div>
+    </section>
+
+    <section class="sessao3">
+      <h1 class="t-s3">Como fazer plano de corte no <span class="pronest">ProNest</span></h1>
     </section>
 
 

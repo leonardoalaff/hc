@@ -2,9 +2,34 @@
     const inputPerfil = document.querySelector('.input-perfil')
     const form = document.querySelector('.bg-inp-per')
     const resultadoPerfil = document.querySelector('.resultado-perfil')
+    const btnLimpar1 = document.querySelector('.btn-limpar1')
+    const btnLimpar2 = document.querySelector('.btn-limpar2')
+    const resultado = document.querySelector('#resultado')
 
     
     
+    function updateClock() {
+      const daysOfWeek = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+      const now = new Date();
+      
+      const dayOfWeek = daysOfWeek[now.getDay()];
+      const day = now.getDate();
+      const month = now.getMonth() + 1; // Months are zero-indexed
+      const year = now.getFullYear();
+      
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      
+      document.getElementById('dayOfWeek').textContent = dayOfWeek;
+      document.getElementById('date').textContent = `${day}/${month}/${year}`;
+      document.getElementById('time').textContent = `${hours}:${minutes}:${seconds}`;
+  }
+  
+  setInterval(updateClock, 1000);
+  updateClock(); // Initial call to display the clock immediately
+  
+
     
     function converterPolegadasParaMilimetros() {
       // Obter o valor em polegadas no formato de fração
@@ -21,7 +46,7 @@
         var milimetros = polegadasDecimal * 25.4;
         
         // Exibir o resultado
-        document.getElementById("resultado").innerHTML = milimetros.toFixed(1) + " milímetros.";
+        resultado.innerHTML = milimetros.toFixed(1) + " milímetros.";
       }
     }
 
@@ -118,4 +143,11 @@
       else if(valorPerfil === 'w250x85' || valorPerfil === 'w250x85.0') {
         resultadoPerfil.innerHTML = '1,50'
       }
+    })
+
+    btnLimpar1.addEventListener('click', () => {
+      resultadoPerfil.innerHTML = ''
+    })
+    btnLimpar2.addEventListener('click', () => {
+      resultado.innerHTML = ''
     })

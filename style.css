@@ -11,6 +11,64 @@ html::-webkit-scrollbar{
     display: none;
 }
 
+body {
+    background-color: #121212;
+}
+
+.clock-container {
+    position: relative;
+    top: 10vh;
+    text-align: center;
+}
+
+.clock-element {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #616161;
+}
+
+#dayOfWeek {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#date {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+#time {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.bg-btn-limpar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 25vh;
+}
+.btn-limpar {
+    background-color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    width: 18%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    letter-spacing: 2px;
+    cursor: pointer;
+    display: none;
+}
+.btn-limpar:hover {
+    transform: scale(1.1);
+}
+
 .sessao1 {
     width: 100%;
     height: 100vh;
@@ -49,7 +107,7 @@ html::-webkit-scrollbar{
     position: relative;
     top: 100px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 #polegadas {
     border: 0;
@@ -97,7 +155,7 @@ html::-webkit-scrollbar{
     background-color: #ff5500;
 }
 .conversor-pol::before {
-    background-color: #00aaff;
+    background-color: #007fc7;
 }
 
 .bg-perfil:hover::before, .conversor-pol:hover::before {
@@ -123,6 +181,14 @@ html::-webkit-scrollbar{
 }
 .conversor-pol:hover ::placeholder {
     color: black;
+}
+.bg-perfil:hover .btn-limpar {
+    transition: 0.2s;
+    display: flex;
+}
+.conversor-pol:hover .btn-limpar {
+    transition: 0.2s;
+    display: flex;
 }
 
 @keyframes desloca {
@@ -157,7 +223,7 @@ html::-webkit-scrollbar{
     position: relative;
     top: 80px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     color: white;
 }
 
@@ -192,8 +258,10 @@ html::-webkit-scrollbar{
     position: relative;
     top: 15vh;
     left: 5%;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
-
 .linha {
     position: relative;
     top: 31vh;
@@ -203,6 +271,7 @@ html::-webkit-scrollbar{
 }
 
 .p-furo {
+    font-size: 1em;
     position: relative;
     top: 15vh;
     right: 5%;
@@ -210,4 +279,23 @@ html::-webkit-scrollbar{
     width: 40%;
     display: flex;
     align-items: center;
+}
+
+
+/********* SESSÃO 3 ************/
+.sessao3 {
+    background-color: #121212;
+    width: 100%;
+    height: 100vh;
+}
+.t-s3 {
+    color: #e0e0e0;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    position: relative;
+    top: 5vh;
+}
+.pronest {
+    color: #ff5500;
 }
