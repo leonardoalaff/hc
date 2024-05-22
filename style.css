@@ -366,3 +366,62 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
     transition: .5s;
 }
+
+.calcula-furo {
+    position: relative;
+    top: 10vh;
+}
+.calcula-furo-2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.calcula-furo-3 {
+    background-color: #1e1e1e;
+    width: 50%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.inp-esp, .inp-dia {
+    position: relative;
+    top: 5vh;
+    border-radius: 10px;
+    height: 5vh;
+    border: none;
+    background-color: #616161;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+.inp-esp::placeholder, .inp-dia::placeholder {
+    color: white;
+}
+
+.btn-calcular {
+    position: relative;
+    top: 2vh;
+    height: 5vh;
+    width: 20%;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+}
+.btn-calcular:hover {
+    background-color: #005fc7;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.resposta-furo {
+    color: #b3b3b3;
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    font-size: 2em;
+}

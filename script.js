@@ -5,6 +5,11 @@
     const btnLimpar1 = document.querySelector('.btn-limpar1')
     const btnLimpar2 = document.querySelector('.btn-limpar2')
     const resultado = document.querySelector('#resultado')
+    const inputDiametro = document.querySelector('.inp-dia')
+    const inputEspessura = document.querySelector('.inp-esp')
+    const formFuro = document.querySelector('.form-furo')
+    const respostaFuro = document.querySelector('.resposta-furo')
+    const btnCalcular = document.querySelector('.btn-calcular')
 
     
     
@@ -151,3 +156,20 @@
     btnLimpar2.addEventListener('click', () => {
       resultado.innerHTML = ''
     })
+
+
+   btnCalcular.addEventListener('click', (e) => {
+    e.preventDefault()
+
+    const valorEspessura = inputEspessura.value
+    const valorDiametro = inputDiametro.value
+    const resultadoEspessura = valorEspessura * 2.5
+
+    if(resultadoEspessura <= valorDiametro && resultadoEspessura > '0') {
+      respostaFuro.innerHTML = `#${resultadoEspessura} - O valor do furo poderá ser mantido`
+      respostaFuro.style.color = 'green'
+    } else if(resultadoEspessura > valorDiametro && valorDiametro > 0) {
+      respostaFuro.innerHTML = `#${resultadoEspessura} - O valor do furo não poderá ser mantido`
+      respostaFuro.style.color = 'red'
+    } 
+   })
