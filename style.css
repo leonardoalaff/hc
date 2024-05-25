@@ -425,3 +425,14 @@ body {
     margin: 10px;
     font-size: 2em;
 }
+
+.bg-leonardo {
+ display: flex;
+ justify-content: center;
+ position: relative;
+ top: 15vh;
+}
+.leonardo {
+    color: #616161;
+    font-size: 7em;
+}
