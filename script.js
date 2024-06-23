@@ -10,6 +10,7 @@
     const formFuro = document.querySelector('.form-furo')
     const respostaFuro = document.querySelector('.resposta-furo')
     const btnCalcular = document.querySelector('.btn-calcular')
+    const sessao1 = document.querySelector('.sessao1')
 
     
     
@@ -166,10 +167,10 @@
     const resultadoEspessura = valorEspessura * 2.5
 
     if(resultadoEspessura <= valorDiametro && resultadoEspessura > '0') {
-      respostaFuro.innerHTML = `#${resultadoEspessura} - O valor do furo poderá ser mantido`
+      respostaFuro.innerHTML = `#${resultadoEspessura} - O furo será mantido`
       respostaFuro.style.color = 'green'
     } else if(resultadoEspessura > valorDiametro && valorDiametro > 0) {
-      respostaFuro.innerHTML = `#${resultadoEspessura} - O valor do furo não poderá ser mantido`
+      respostaFuro.innerHTML = `#${resultadoEspessura} - O furo NÃO será mantido`
       respostaFuro.style.color = 'red'
     } 
    })

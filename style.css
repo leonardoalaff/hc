@@ -14,6 +14,10 @@
   font-style: normal;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 html::-webkit-scrollbar{
     display: none;
 }
@@ -88,8 +92,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #121212;
 }
+
+.sessao1.active {
+    background-color: green;
+}
+
 .conversor-pol {
     background-color: #1e1e1e;
     cursor: pointer;
@@ -281,17 +289,18 @@ body {
     transform: scale(1.2);
 }
 .linha {
+    display: none;
     position: relative;
-    top: 31vh;
+    top: 25vh;
     width: 1px;
-    height: 50vh;
+    height: 40vh;
     background-color: #b3b3b3;
 }
 
 .p-furo {
     font-size: 1em;
     position: relative;
-    top: 15vh;
+    top: 10vh;
     right: 5%;
     color: #b3b3b3;
     width: 40%;
@@ -311,6 +320,7 @@ body {
 }
 .bg-t-s3 {
     position: relative;
+    top: 10vh;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -363,8 +373,9 @@ body {
 }
 .voltagem:hover {
     transform: scale(1.2);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
+    box-shadow: 5px 5px 10px rgba(255, 72, 0, 0.473);
     transition: .5s;
+    cursor: pointer;
 }
 
 .calcula-furo {
@@ -427,7 +438,7 @@ body {
 }
 
 .bg-leonardo {
- display: flex;
+ display: none;
  justify-content: center;
  position: relative;
  top: 15vh;
@@ -436,3 +447,29 @@ body {
     color: #616161;
     font-size: 7em;
 }
+
+.sessao5 {
+    width: 100%;
+    height: 100vh;
+}
+.sessao5 h1 {
+    color: #e0e0e0;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.box-iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.box-iframe iframe {
+    width: 95%;
+    height: 90vh;
+    border-radius: 10px;
+}
+
