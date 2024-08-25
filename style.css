@@ -35,6 +35,8 @@ body {
 header {
     width: 100%;
     height: 12vh;
+    position: relative;
+    z-index: 2;
 }
 
 .bg-menu {
@@ -54,6 +56,10 @@ header {
     gap: 30px;
     margin: 0 5% 0 3%;
     font-size: 1em;
+}
+
+.menu li {
+    cursor: pointer;
 }
 
 .clock-container {
@@ -100,7 +106,6 @@ header {
     background: url('imagens/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -2;
 }
 
 .s1-text {
@@ -108,6 +113,7 @@ header {
     position: relative;
     top: 50vh;
     left: 10%;
+    z-index: 2;
 }
 .s1-text h1, p {
     color: #e0e0e0;
@@ -119,7 +125,47 @@ header {
     background-color: #005fc7;
     border: none;
     padding: 1em;
+    position: relative;
 }
+
+
+.box-contatos {
+    position: absolute;
+    left: -100%;
+    width: 40%;
+    height: 100vh;
+    z-index: 5;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    transition: .5s;
+}
+.box-contatos ul {
+    color: #e0e0e0;
+    position: relative;
+    top: 10vh;
+    left: 10%;
+}
+.box-contatos ul li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 85%;
+    margin-bottom: 40px;
+    transition: .3s;
+}
+.box-contatos ul li:hover {
+    box-shadow: 10px 10px 10px black;
+    font-size: 1.2em;
+    transition: .3s;
+}
+.box-contatos.active {
+    left: 0;
+    transition: .5s;
+}
+
+
 
 .box-normas {
     background-color: transparent;
@@ -132,22 +178,40 @@ header {
     position: absolute;
     right: -100%;
     text-align: center;
+    transition: .5s;
 }
-.box-normas:active {
-    background-color: transparent;
-    backdrop-filter: blur(15px);
-    border: 1px solid white;
-    border-radius: 10px;
-    width: 50%;
-    height: 50vh;
-    top: 35vh;
-    position: absolute;
+.box-normas.active {
     right: 5%;
-    text-align: center;
+    transition: .5s;
 }
 
 .box-normas form {
     margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.box-normas label {
+    color: #e0e0e0;
+}
+.box-normas input {
+    border-radius: 10px;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+}
+.btn-norma {
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: #e0e0e0;
+    cursor: pointer;
+}
+.btn-norma:hover{
+    background-color: #005fc7;
+    transition: .3s;
+    border: 1px solid #005fc7;
 }
 
 .bg-btn-limpar {

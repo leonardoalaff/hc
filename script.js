@@ -14,6 +14,8 @@
     const btnMenuNormaPintura = document.querySelector('.btn-menu-norma-pintura')
     const boxNormas = document.querySelector('.box-normas')
     const btnTeste = document.querySelector('.btn-teste')
+    const boxContatos = document.querySelector('.box-contatos')
+    const contatos = document.querySelector('.contatos')
 
     
 
@@ -180,6 +182,10 @@
     } 
    })
 
-   btnTeste.addEventListener('click', () => {
+   btnMenuNormaPintura.addEventListener('click', () => {
     boxNormas.classList.toggle('active')
+   })
+
+   contatos.addEventListener('click', () => {
+    boxContatos.classList.toggle('active')
    })
