@@ -121,6 +121,35 @@ header {
     padding: 1em;
 }
 
+.box-normas {
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 50%;
+    height: 50vh;
+    top: 35vh;
+    position: absolute;
+    right: -100%;
+    text-align: center;
+}
+.box-normas:active {
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 50%;
+    height: 50vh;
+    top: 35vh;
+    position: absolute;
+    right: 5%;
+    text-align: center;
+}
+
+.box-normas form {
+    margin-top: 5vh;
+}
+
 .bg-btn-limpar {
     width: 100%;
     display: flex;

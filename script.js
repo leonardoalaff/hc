@@ -11,6 +11,11 @@
     const respostaFuro = document.querySelector('.resposta-furo')
     const btnCalcular = document.querySelector('.btn-calcular')
     const sessao1 = document.querySelector('.sessao1')
+    const btnMenuNormaPintura = document.querySelector('.btn-menu-norma-pintura')
+    const boxNormas = document.querySelector('.box-normas')
+    const btnTeste = document.querySelector('.btn-teste')
+
+    
 
     
     
@@ -173,4 +178,8 @@
       respostaFuro.innerHTML = `#${resultadoEspessura} - O furo NÃO será mantido`
       respostaFuro.style.color = 'red'
     } 
+   })
+
+   btnTeste.addEventListener('click', () => {
+    boxNormas.classList.toggle('active')
    })
