@@ -22,20 +22,49 @@ html::-webkit-scrollbar{
     display: none;
 }
 
+a {
+    
+}
+
 body {
-    background-color: #121212;
+}
+
+header {
+    width: 100%;
+    height: 12vh;
+}
+
+.bg-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    position: relative;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 11vh;
+    list-style: none;
+    gap: 30px;
+    margin: 0 5% 0 3%;
+    font-size: 1em;
 }
 
 .clock-container {
     position: relative;
-    top: 10vh;
+    top: 2vh;
+    left: 8%;
+    right: 5%;
     text-align: center;
+    margin: 10px;
 }
 
 .clock-element {
-    font-size: 2em;
-    margin: 10px 0;
-    color: #616161;
+    margin: 5px;
+    color: #e0e0e0;
     cursor: context-menu;
     transition: 0.5s;
 }
@@ -45,19 +74,30 @@ body {
 }
 
 #dayOfWeek {
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 #date {
-    font-size: 1.2em;
+    font-size: 1.5em;
     letter-spacing: 1px;
 }
 
 #time {
-    font-size: 3em;
-    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/********************** SESSA0 0 **************************/
+.sessao0 {
+    position: relative;
+    top: -15vh;
+    width: 100%;
+    height: 100vh;
+    background: url('imagens/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
 }
 
 .bg-btn-limpar {
