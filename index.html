@@ -7,7 +7,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+<a href="#header">
+  <div class="btn-up">TOP</div>
+</a>
+
+    <header id="header">
       <nav class="bg-menu">
         <div class="clock-container">
           <div id="dayOfWeek" class="clock-element"></div>
@@ -15,13 +19,15 @@
           <div id="time" class="clock-element"></div>
       </div>
         <ul class="menu">
-          <a href="#bg-ferramentas" class="link-menu">
+          <a href="#ferramentas" class="link-menu">
             <li>FERRAMENTAS</li>
           </a>
             <li class="btn-menu-norma-pintura">NORMAS DE PINTURA</li>
           <li class="contatos">CONTATOS HC</li>
           <li>TABELAS</li>
-          <li>TEXTO 5</li>
+          <a href="#scripts" class="li-scripts">
+            <li>SCRIPTS</li>
+          </a>
         </ul>
       </nav>
     </header>
@@ -49,9 +55,9 @@
   </div>
 
   <div class="s1-text">
-    <h1>TEXTO TESTE</h1>
-    <p>PARÁGRAFO TESTE</p>
-    <button class="btn-test">BOTÃO TESTE</button>
+    <h1>COMO USAR O PRONEST</h1>
+    <p>Clique aqui para dicas de como usar o pronest</p>
+    <a href="#p-s3"><button class="btn-test">IR AGORA</button></a>
   </div>
 
   <div class="box-normas">
@@ -69,7 +75,7 @@
 
     <div class="black-box"></div>
 
-    <h1 class="T-ferramentas">FERRAMENTAS</h1>
+    <h1 class="T-ferramentas" id="ferramentas">FERRAMENTAS</h1>
 
 
     
@@ -137,7 +143,7 @@
       
     </section>
     <section class="sessao4"><div class="bg-p-s3">
-        <p class="p-s3">1. Com o ProNest aberto na aba 'Arquivo', selecione a opção 'Novo'. <br><br> 2. Escolha a máquina para fazer o corte, neste caso, 'UNIPLASMA 3'. <br><br> 3. Selecione a espessura da chapa. <br><br> 4. Escolha a voltagem de acordo com a indicação ao lado e vá em 'Criar'. <br><br> 5. Vá na pasta onde estão localizadas as peças que foram salvas pelo AutoCad, confira se as medidas estão corretas, aperte 'Enter' para lançar as peças, mude a quantidade de acordo com cada peça e clique em 'voltar ao agrupamento'. <br><br> 6. Vá em 'Editar lista de chapas' e configure o tamanho da chapa que será usada no corte e volte ao agrupamento. <br><br> 7. Selecione a opção 'Agrupamento automático'. <br><br> 8. Organize as peças caso nescessário. <br><br> 9. Salve o arquivo na pasta inicial do projeto com o nome: <abbr class="ab" title="ESPESSURA">'#xx</abbr> <abbr class="ab" title="MATERIAL">xxx</abbr> <abbr class="ab" title="PROJETO">HCxxxxxx'.</abbr> <br><br> 10. Vá em 'Saída' e salve com o mesmo nome na pasta: 'PRONEST' > 'PROGRAMAS'. <br><br> 11. Vá em 'Relatórios', crie um PDF e salve na pasta 'PRONEST' > 'PDF'. <br><br> 12. Por último, imprima o relatório.
+        <p class="p-s3" id="p-s3">1. Com o ProNest aberto na aba 'Arquivo', selecione a opção 'Novo'. <br><br> 2. Escolha a máquina para fazer o corte, neste caso, 'UNIPLASMA 3'. <br><br> 3. Selecione a espessura da chapa. <br><br> 4. Escolha a voltagem de acordo com a indicação ao lado e vá em 'Criar'. <br><br> 5. Vá na pasta onde estão localizadas as peças que foram salvas pelo AutoCad, confira se as medidas estão corretas, aperte 'Enter' para lançar as peças, mude a quantidade de acordo com cada peça e clique em 'voltar ao agrupamento'. <br><br> 6. Vá em 'Editar lista de chapas' e configure o tamanho da chapa que será usada no corte e volte ao agrupamento. <br><br> 7. Selecione a opção 'Agrupamento automático'. <br><br> 8. Organize as peças caso nescessário. <br><br> 9. Salve o arquivo na pasta inicial do projeto com o nome: <abbr class="ab" title="ESPESSURA">'#xx</abbr> <abbr class="ab" title="MATERIAL">xxx</abbr> <abbr class="ab" title="PROJETO">HCxxxxxx'.</abbr> <br><br> 10. Vá em 'Saída' e salve com o mesmo nome na pasta: 'PRONEST' > 'PROGRAMAS'. <br><br> 11. Vá em 'Relatórios', crie um PDF e salve na pasta 'PRONEST' > 'PDF'. <br><br> 12. Por último, imprima o relatório.
       </div>
 
       <p class="voltagem">50a #1 à #4,75 <br><br> 130a #6,35 à #16 <br><br> 200a #19 à #32 <br><br> OXICORTE #38 à #76,2</p>
@@ -145,10 +151,7 @@
 
 
     <section class="sessao5">
-      <h1>Val Aço</h1>
-      <div class="box-iframe">
-        <iframe src="https://www.valaco.com.br/" frameborder="0"></iframe>
-      </div>
+     <h1 class="t-scripts" id="scripts">SCRIPTS</h1>
     </section>
 
 
