@@ -16,6 +16,7 @@
     const btnTeste = document.querySelector('.btn-teste')
     const boxContatos = document.querySelector('.box-contatos')
     const contatos = document.querySelector('.contatos')
+    const formNormas = document.querySelector('#form-normas')
 
     
 
@@ -186,6 +187,12 @@
     boxNormas.classList.toggle('active')
    })
 
-   contatos.addEventListener('click', () => {
-    boxContatos.classList.toggle('active')
+   contatos.addEventListener('submit', () => {
+    if(value = 'U21/10'){
+      
+    }
+   })
+
+   formNormas.addEventListener('click', () => {
+
    })

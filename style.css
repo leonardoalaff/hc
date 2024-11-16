@@ -221,6 +221,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 10px;
+
 }
 .box-normas label {
     color: #e0e0e0;
@@ -251,6 +252,54 @@ header {
     background-color: #005fc7;
     transition: .3s;
     border: 1px solid #005fc7;
+}
+
+/*********** TEXTO NORMA DE PINTURA ***********/
+.box-texto-norma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.texto-norma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 60%;
+    position: relative;
+    top: -7%;
+}
+.card {
+    background-color: rgba(0, 0, 0, 0.342);
+    border-radius: 10px;
+}
+.card:hover {background-color: #005fc7;}
+.card-fundo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin: 10px;
+}
+.card-acabamento {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin: 10px;
+}
+.texto-norma h1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 5%;
+    color: white;
+}
+.texto-norma h1:hover {
+    background-color: blue;
 }
 
 .bg-btn-limpar {
